@@ -64,20 +64,32 @@
 
     <main>
         <p id="catalogoTitulo">Nosso catálogo</p>
+        <div id="buscador">
+            <input id="buscadorInput" placeholder="Marca,Modelo,Cor">
+            <button onclick="pesquisar()">PESQUISAR</button>
+            <label>Marca</label>
+            <select id="opcaoMarca">
+                <option value="Porshe">Porshe</option>
+                <option value="Bmw">Bmw</option>
+                <option value="Audi">Audi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+            </select>
+        </div>
         <div id="super">
         <p id="subtitulo">Superesportivos</p>
         <div id="conteiner" class="conteinerSuper">
-            <div class="fotoHover">
+            <div id="noveNoveOnze" class="fotoHover">
                 <p class="nomeModelo">911 Turbo S</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
                 <p class="nomeMarca">🇩🇪 Porshe</p>
             </div>
-            <div>
+            <div id="m3E46GTR">
                 <p class="nomeModelo">M3 M46 GTR</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
                 <p class="nomeMarca">🇩🇪 BMW</p>
             </div>
-            <div>
+            <div id="rs5SB">
                 <p class="nomeModelo">RS 5 Sportback</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
                 <p class="nomeMarca">🇩🇪 Audi</p>
@@ -87,17 +99,17 @@
         <div id="jdmDiv">
         <p id="subtitulo">JDM's</p>
         <div id="conteiner" class="conteinerJdm">
-            <div>
+            <div id="skylineR34GTR">
                 <p class="nomeModelo">Skyline R34 GT4</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
                 <p class="nomeMarca">🇯🇵 Nissan</p>
             </div>
-            <div>
+            <div id="supraMK4">
                 <p class="nomeModelo">Supra MK4</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
                 <p class="nomeMarca">🇯🇵 Toyota</p>
             </div>
-            <div>
+            <div id="silvia">
                 <p class="nomeModelo">Silvia S15</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
                 <p class="nomeMarca">🇯🇵 Nissan</p>
