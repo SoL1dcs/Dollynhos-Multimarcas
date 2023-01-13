@@ -14,126 +14,83 @@ const main_stringCL = [ "PORSHE" , "BMW" , "AUDI" , "NISSAN" , "TOYOTA" , "NISSA
 const main_stringLow = [ "porshe" , "bmw" , "audi" , "nissan" , "toyota" , "nissan" ]
 
 
-var numeroDeCarros=6;
-
-
 
 function pesquisar(){
-    var input = document.getElementById('buscadorInput').value
-    if (input != ''){
-        console.log(input)
+    var menuBruto = document.getElementById('opcaoMarca')
+    var menu = menuBruto.value
+
+    var formValue = document.getElementById('buscadorInput').value
+
+    if (formValue != ''){
         showOff();
     }
     else{
         showOn();
     }
-    var menuBruto = document.getElementById('opcaoMarca')
-    var menu = menuBruto.value
 
-    if ( menu == 'Porshe'){
-        showOff();
-        isPorshe(menu);
+    //Marcas
+    
+    var main_loop = 0;
+
+    while (main_loop <= main_string.length){
+        if (formValue === main_string[main_loop] || formValue === main_stringCL[main_loop] || formValue === main_stringLow[main_loop]){
+            showOff();
+            isPorshe(formValue);
+            isPorshe(formValue);
+            isAudi(formValue);
+            isBmw(formValue);
+            isNissan(formValue);
+            isToyota(formValue);
+        }
+        main_loop++;
+    }
     }
 
-    if( menu == 'Bmw'){
-        showOff();
-        isBmw(menu);
+    //Fim da funcao
+    function isPorshe(input){
+        if (input === 'Porshe' || input === 'PORSHE' || input === 'porshe'){
+            document.getElementById('noveNoveOnze').style.display = 'inline';
+        }
     }
 
-    isPorshe(input);
-    isAudi(input);
-    isBmw(input);
-    isNissan(input);
-    isToyota(input);
+    function isBmw(input){
+        if (input === 'Bmw' || input === 'BMW' || input === 'bmw'){
+            document.getElementById('m3E46GTR').style.display = 'inline';
+        }
+    }
 
-}
+    function isAudi(input){
+        if (input === 'Audi' || input === 'AUDI' || input === 'audi'){
+            document.getElementById('rs5SB').style.display = 'inline';
+        }
+    }
+    function isNissan(input){
+        if (input === 'Nissan' || input === 'NISSAN' || input === 'nissan'){
+            document.getElementById('skylineR34GTR').style.display = 'inline';
+            document.getElementById('silvia').style.display = 'inline';
+        }
+    }
+    function isToyota(input){
+        if (input === 'Toyota' || input === 'TOYOTA' || input === 'toyota'){
+            console.log(input)
+            document.getElementById('supraMK4').style.display = 'inline';
+        }
+    }  
 
-function showOff(){
-    document.getElementById('noveNoveOnze').style.display = 'none';
-    document.getElementById('m3E46GTR').style.display = 'none';
-    document.getElementById('rs5SB').style.display = 'none';
-    document.getElementById('skylineR34GTR').style.display = 'none';
-    document.getElementById('supraMK4').style.display = 'none';
-    document.getElementById('silvia').style.display = 'none';
-}
+    function showOff(){
+        document.getElementById('noveNoveOnze').style.display = 'none';
+        document.getElementById('m3E46GTR').style.display = 'none';
+        document.getElementById('rs5SB').style.display = 'none';
+        document.getElementById('skylineR34GTR').style.display = 'none';
+        document.getElementById('supraMK4').style.display = 'none';
+        document.getElementById('silvia').style.display = 'none';
+    }
 
-function showOn(){
-    document.getElementById('noveNoveOnze').style.display = 'inline';
-    document.getElementById('m3E46GTR').style.display = 'inline';
-    document.getElementById('rs5SB').style.display = 'inline';
-    document.getElementById('skylineR34GTR').style.display = 'inline';
-    document.getElementById('supraMK4').style.display = 'inline';
-    document.getElementById('silvia').style.display = 'inline';   
-}
-
-function isPorshe(input){
-    if (input === 'Porshe' || input === 'PORSHE' || input === 'porshe'){
+    function showOn(){
         document.getElementById('noveNoveOnze').style.display = 'inline';
-    }
-}
-
-function isBmw(input){
-    if (input === 'Bmw' || input === 'BMW' || input === 'bmw'){
         document.getElementById('m3E46GTR').style.display = 'inline';
-    }
-}
-
-function isAudi(input){
-    if (input === 'Audi' || input === 'AUDI' || input === 'audi'){
         document.getElementById('rs5SB').style.display = 'inline';
-    }
-}
-function isNissan(input){
-    if (input === 'Nissan' || input === 'NISSAN' || input === 'nissan'){
         document.getElementById('skylineR34GTR').style.display = 'inline';
-    }
-}
-function isToyota(input){
-    if (input === 'Toyota' || input === 'TOYOTA' || input === 'toyota'){
-        console.log(input)
         document.getElementById('supraMK4').style.display = 'inline';
+        document.getElementById('silvia').style.display = 'inline';   
     }
-}
-
-    /*
-    if ( input === 'Porshe'){
-        document.getElementById('noveNoveOnze').style.display = 'inline';
-    }
-    if ( input === 'BMW'|| input === 'Bmw'){
-        document.getElementById('m3E46GTR').style.display = 'inline';
-    }
-
-    if ( input === 'Audi'){
-        document.getElementById('rs5SB').style.display = 'inline';
-    }*/
-
-
-/*
-const modelosString = [
-noveNoveOnze = {
-    marca:'Porshe',
-    modelo:'991 Turbo s'
-}, 
-m3E46GTR = {
-    marca:'BMW',
-    modelo:'M3 E46 GTR'
-}, 
-rs5SB= {
-    marca:'Audi',
-    modelo:'RS 5 Sportback'
-},
-skylineR34GTR = {
-    marca:'Nissan',
-    modelo:'Skyline R34 GTR'
-}, 
-SupraMK4 = {
-    marca:'Toyota',
-    modelo:'Supra MK4'
-}, 
-
-
-silviaObj ={
-    marca:'Nissan',
-    modelo:'Silvia S15',
-}] 
-*/
