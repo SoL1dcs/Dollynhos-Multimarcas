@@ -1,0 +1,67 @@
+#conteiner{
+    margin: 0 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    gap: 20px;
+}
+
+#catalogoTitulo{
+    text-align: center;
+    font-size: 3vw;
+    margin: 10px 0;
+    color: #000;
+}
+
+.fotoCarro{
+    width: 100%;
+}
+
+/*
+.fotoCarro:hover{
+    width: 110%;
+}
+
+.fotoCarro:not(:hover){
+    width: 100%;
+}
+
+*/
+
+#subtitulo{
+    padding-left: 5vw;
+    font-size: 2vw;
+    color: #FFF;
+}
+
+#super{
+    background-color: #20201e;
+}
+
+.nomeModelo{
+    color:#FFF;
+    font-size: 1.5vw;
+}
+
+.nomeMarca{
+    color:white;
+    font-size: 1vw;
+}
+
+#jdmDiv{
+    background-color:rgba(127,132,151,255);
+}
+
+#jdmDiv p{
+    color: #000;
+}
+
+
+@media (max-768px) {
+    #subtitulo{
+        text-align: center;
+    }
+    
+}

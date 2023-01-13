@@ -9,10 +9,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
-    background-color: blue;
+    background-color: #3b3d4a;
     padding: 5px 0;
     font-weight: bold;
     display: flex;
@@ -24,8 +25,9 @@ header{
 ul{
     display: flex;
     gap: 20px;
+    padding-top:0px;
     list-style-type: none;
-    font-size: 2vw;
+    font-size: 1.3vw;
     font-family: 'Montserrat', sans-serif;
 }
 
