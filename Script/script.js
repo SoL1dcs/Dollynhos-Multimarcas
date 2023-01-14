@@ -31,6 +31,8 @@ const modelos = [
 
     //NOVOS MODELOS SERÃO INCLUSOS AQUI
 
+addEventListener(13,()=>pesquisar())
+
 
 function pesquisar(){  
     var formValueNativo= document.getElementById('buscadorInput').value
@@ -44,6 +46,9 @@ function pesquisar(){
     else{
     showOn();
     }
+            isBlack(formValue)
+            isWhite(formValue)
+            isSilver(formValue)
 
     
             isPorshe(formValue)
@@ -167,5 +172,26 @@ function pesquisar(){
     function isSilviaS15(input){
         if (input === modelos[5].modelo){
             document.getElementById('silvia').style.display = 'inline';
+        }
+    }
+
+    function isBlack(input){
+        if (input === 'preto'){
+            document.getElementById('supraMK4').style.display = 'inline';
+        }
+    }
+
+    function isWhite(input){
+        if (input === 'branco'){
+            document.getElementById('m3E46GTR').style.display = 'inline';
+        }
+    }
+
+    function isSilver(input){
+        if (input === 'prata'){
+            document.getElementById('noveNoveOnze').style.display = 'inline';
+            document.getElementById('rs5SB').style.display = 'inline';
+            document.getElementById('skylineR34GTR').style.display = 'inline';
+            document.getElementById('silvia').style.display = 'inline';  
         }
     }
