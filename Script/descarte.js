@@ -12,35 +12,39 @@
 
 
 /*
-const modelosString = [
-noveNoveOnze = {
-    marca:'Porshe',
-    modelo:'991 Turbo s'
-}, 
-m3E46GTR = {
-    marca:'BMW',
-    modelo:'M3 E46 GTR'
-}, 
-rs5SB= {
-    marca:'Audi',
-    modelo:'RS 5 Sportback'
-},
-skylineR34GTR = {
-    marca:'Nissan',
-    modelo:'Skyline R34 GTR'
-}, 
-SupraMK4 = {
-    marca:'Toyota',
-    modelo:'Supra MK4'
-}, 
 
-
-silviaObj ={
-    marca:'Nissan',
-    modelo:'Silvia S15',
-}] 
 */
 
+
+const noveNoveOnze = {
+    marca:'Porshe',
+    modelo:'991 Turbo s'
+} 
+
+const m3E46GTR = {
+    marca:'BMW',
+    modelo:'M3 E46 GTR'
+}
+
+const rs5SB= {
+    marca:'Audi',
+    modelo:'RS 5 Sportback'
+}
+
+const skylineR34GTR = {
+    marca:'Nissan',
+    modelo:'Skyline R34 GTR'
+} 
+
+const SupraMK4 = {
+    marca:'Toyota',
+    modelo:'Supra MK4'
+}
+
+const silviaObj ={
+    marca:'Nissan',
+    modelo:'Silvia S15',
+}
 
 
 

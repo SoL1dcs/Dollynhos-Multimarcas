@@ -16,7 +16,11 @@
 }
 
 .fotoCarro{
-    width: 100%;
+    max-width: 100%;
+}
+
+.valorCarro{
+    color: #009C00;
 }
 
 /*

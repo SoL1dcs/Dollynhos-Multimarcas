@@ -35,9 +35,25 @@ li{
     color:var(--gren);
 }
 
+header ul{
+    margin-top:10px;
+}
+
 #home{
     color: #009C00;
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 15px;
+    margin-left: 10px;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
 }
