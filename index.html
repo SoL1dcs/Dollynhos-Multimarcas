@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/catalogo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/contato.css">
     <title>Dollynhos multimarcas</title>
 </head>
 <body>
@@ -15,12 +17,10 @@
         <p id="home" >Dollynhos multimarcas</p>
         <ul>
             <li ><a href="#mainId">Carros</a>  </li>
-            <li onclick="">Contatos</li>
+            <li ><a href='#contato'>Contatos</a> </li>
         </ul>
-        
     </header>
     <nav>
-        
         <div id="carouselHeader" class="carousel carousel-white slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -29,24 +29,24 @@
               </div>            
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/Porshe_911.jpg" class="d-block h-100" alt="...">
+                    <img src="img/Porshe_911.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="carouselLegenda" style="font-family: 'Montserrat', sans-serif;font-size: 3vw;">Superesportivo a preços acessíveis</p>
-                        <button type="button" class="btn btn-light">Saiba Mais</button>
+                        <button type="button" class="btn btn-success" style="background-color: #009C00;">Saiba Mais</button>
                     </div>
                 </div>    
                 <div class="carousel-item">
-                    <img src="img/Silvia.jpg" class="d-block h-100">
+                    <img src="img/Silvia.jpg" class="d-block w-100">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="carouselLegenda" style="font-family: 'Montserrat', sans-serif;font-size: 3vw;">JDM's Legalizados</p>
-                        <button type="button" class="btn btn-light">Saiba Mais</button>
+                        <button type="button" class="btn btn-success" style="background-color: #009C00;">Saiba Mais</button>
                     </div>    
                 </div>
                 <div class="carousel-item">
-                    <img src="img/2014-Ford-Mustang-from-Need-For-Speed-movie-going-up-for-auction.jpg" class="d-block w-100 h-100">
+                    <img src="img/2014-Ford-Mustang-from-Need-For-Speed-movie-going-up-for-auction.jpg" class="d-block w-100">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="carouselLegenda" style="font-family: 'Montserrat', sans-serif;font-size: 3vw;">Carros Clássicos</p>
-                        <button type="button" class="btn btn-light">Saiba Mais</button>
+                        <button type="button" class="btn btn-success" style="background-color: #009C00;">Saiba Mais</button>
                     </div>    
                 </div>            
             </div>
@@ -65,31 +65,33 @@
 
     <main id="mainId"> 
         <p id="catalogoTitulo" style="color: #009C00;">Veja nossos carros</p>   
-        <div id="super">
-        <p id="subtitulo">Superesportivos</p>
-        <!--
         <div id="buscador">
             <input id="buscadorInput" placeholder="Marca,Modelo,Cor">
-            <button onclick="pesquisar()">PESQUISAR</button>
-        </div>-->
+            <i class="bi bi-search" onclick="pesquisar()" style="cursor: pointer; "></i>
+        </div>
+        <div id="super">
+        <p id="subtitulo">Superesportivos</p>
         <div id="conteiner" class="conteinerSuper">
             <div id="noveNoveOnze" class="fotoHover">
                 <p class="nomeModelo">911 Turbo S</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/europeus/porshe911TurboS.jpeg">
                 <p class="nomeMarca">🇩🇪 Porshe</p>
                 <p class="valorCarro">1.500.000,00 R$</p>
+                <button class="botaoDetalhe">Mais Detalhes</button>
             </div>
             <div id="m3E46GTR">
                 <p class="nomeModelo">M3 M46 GTR</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/europeus/bmwM3E46GTR.jpg">
                 <p class="nomeMarca">🇩🇪 BMW</p>
                 <p class="valorCarro">350.000,00 R$</p>
+                <button class="botaoDetalhe">Mais Detalhes</button>
             </div>
             <div id="rs5SB">
                 <p class="nomeModelo">RS 5 Sportback</p>
                 <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/europeus/audiRS.jpg">
                 <p class="nomeMarca">🇩🇪 Audi</p>
                 <p class="valorCarro">750.000,00 R$</p>
+                <button class="botaoDetalhe">Mais Detalhes</button>
             </div>
         </div>
         </div>
@@ -98,23 +100,38 @@
         <div id="conteiner" class="conteinerJdm">
             <div id="skylineR34GTR">
                 <p class="nomeModelo">Skyline R34 GTR</p>
-                <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
+                <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/jap/nissanSkyline.jpg">
                 <p class="nomeMarca">🇯🇵 Nissan</p>
+                <p class="valorCarro">780.000,00 R$</p>
+                <button class="botaoDetalhe">Mais Detalhes</button>
             </div>
             <div id="supraMK4">
                 <p class="nomeModelo">Supra MK4</p>
-                <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
+                <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/jap/toyotaSupraMK4.jpg">
                 <p class="nomeMarca">🇯🇵 Toyota</p>
+                <p class="valorCarro">26.000,00 R$</p>
+                <button class="botaoDetalhe">Mais Detalhes</button>
             </div>
             <div id="silvia">
                 <p class="nomeModelo">Silvia S15</p>
-                <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/Porshe_911.jpg">
+                <img class="fotoCarro" src="/Dollynhos-Multimarcas/img/jap/nissanSilviaS15.jpg">
                 <p class="nomeMarca">🇯🇵 Nissan</p>
+                <p class="valorCarro">60.000,00 R$</p>
+                <button class="botaoDetalhe">Mais Detalhes</button>
             </div>
         </div>
     </div>
     </div>
+    <div id="contato">
+        <div>
+            <p id="contatoTexto">Entre em contato pelo Nosso WhatsApp.</p>
+        </div>
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/5551997386239"> <img alt="Chat on WhatsApp" class="img-fluid" src="Whats/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteLarge.svg" /> </a>
+    </div>
+
     </main>
+    <footer>
+    </footer>
     
 </body>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

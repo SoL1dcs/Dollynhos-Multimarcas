@@ -47,11 +47,12 @@ function pesquisar(){
 
     
             isPorshe(formValue)
-            isPorshe(formValue)
-            isAudi(formValue)
             isBmw(formValue)
+            isAudi(formValue)
             isNissan(formValue)
             isToyota(formValue)
+
+
             isNoveNoveOnze(formValue);
             isM3E46GTR(formValue)
             isRs5SB(formValue)
@@ -72,7 +73,8 @@ function pesquisar(){
         }
     */
     function isPorshe(input){
-        if (input === marcasEuro[0]){
+        
+        if (input === marcasEuro[2]){
             document.getElementById('noveNoveOnze').style.display = 'inline';
         }
     }
@@ -80,13 +82,14 @@ function pesquisar(){
 
 
     function isBmw(input){
+        console.log(input)
         if (input === marcasEuro[1]){
             document.getElementById('m3E46GTR').style.display = 'inline';
         }
     }
 
     function isAudi(input){
-        if (input === marcasEuro[2]){
+        if (input === marcasEuro[0]){
             document.getElementById('rs5SB').style.display = 'inline';
         }
     }
